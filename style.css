@@ -1,0 +1,206 @@
+body {
+    width: 250px;
+    height: 300px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(10, 10, 19), rgb(12, 0, 34), rgb(62, 0, 79));
+    color: yellow;
+    padding: 0;
+    margin: 0;
+}
+
+body h1 {
+    color: yellow;
+    text-shadow: 0px 3px purple;
+    font-size: 30px;
+}
+
+
+
+div {
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.style-box {
+    align-items: center;
+    background-color: #23212D;
+    border-radius: 5px;
+    border: 2px solid rgb(70, 70, 70);
+    border-top: 2px solid rgb(102, 104, 74);
+    outline-color: yellow;
+    outline-style: solid;
+    outline-width: 0.25px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid rgb(102, 104, 74);
+    border-left: 2px solid rgb(87, 87, 87);
+    width: 80%;
+    margin: 0 auto;
+    height: 20px;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.144);
+    color: yellow;
+    min-height: 25px;
+    width: 40%;
+    outline-width: 0.25px;
+    outline-color: yellow;
+    outline-style: solid;
+    vertical-align: middle;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid rgb(102, 104, 74);
+    border-left: 2px solid rgb(87, 87, 87);
+    margin-right: 20px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.144);
+    color: yellow;
+    outline-width: 0.25px;
+    outline-color: yellow;
+    outline-style: solid;
+    border-radius: 5px;
+    min-height: 25px;
+    vertical-align: middle;
+}
+
+input[type="range"] {
+    appearance: none;
+    vertical-align: middle;
+    accent-color: yellow
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #31003e, #000);
+    height: 0.25rem;
+}
+
+/** Firefox **/
+input[type="range"]::-moz-range-track {
+    background: linear-gradient(to right, #31003e, #000);
+    height: 0.25em;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    margin-top: -5px;
+    /* Centers thumb on the track */
+    background-color: yellow;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    appearance: none;
+    margin-top: -5px;
+    /* Centers thumb on the track */
+    background-color: yellow;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+
+}
+
+a {
+    outline: none;
+    text-decoration: underline;
+    color: rgb(217, 0, 217);
+}
+
+.credits {
+    font-size: 8px;
+    padding-bottom: 3px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0);
+    /* background color before toggling */
+    ;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: yellow;
+    /* handle color */
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #31003e;
+    /* background color after toggling */
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px yellow;
+    /* outline color after pressed by user */
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.toggle-container {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+    box-sizing: border-box;
+}
+
+.toggle-text {
+    flex: 1;
+    line-height: 1.2em;
+    margin-right: 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #673473;
+}

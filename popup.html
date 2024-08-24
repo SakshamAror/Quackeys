@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quackeys</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+
+    <div>
+        <h1>Quackeys</h1>
+    </div>
+
+
+    <div>
+        <select id="audioSelect">
+            <option disabled value="">--- Real Keycaps ---</option>
+            <option selected value="MXBLack">MXBlack</option>
+            <option value="Cream">Cream</option>
+            <option value="Navies">Box Navies</option>
+            <option value="BlueAlps">Blue Alps</option>
+            <option value="Buckling">Buckling Spring</option>
+            <option value="HolyPandas">Holy Pandas</option>
+            <option disabled value="">--- Extras ---</option>
+            <option value="Wood">Wood (My Favourite)</option>
+            <option value="RK61">Explosive</option>
+            <option value="Water">Water</option>
+        </select>
+        <button id="playButton">Use Sound</button>
+    </div>
+
+    <div style="padding-top: 10px;" class="style-box">
+        Volume:
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" style="margin-left: 10px;">
+    </div>
+
+    <div class="style-box toggle-container" style="margin-top: 10px; margin-bottom: 30px;">
+        <div class="toggle-text">Auto mute when media is playing in the open tab</div>
+        <label class="switch" style="margin: 6px;">
+            <input type="checkbox" id="autoMuteToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <hr>
+
+    <div class="credits"> Icons made by <a href="https://www.flaticon.com/authors/meaicon" title="meaicon"> meaicon </a>
+        from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        <br>
+        Sounds are from <a href="https://pixabay.com/" title="pixabay"> pixabay</a> and <a
+            href="https://github.com/tplai/kbsim/tree/master" title="kbsim">kbsim</a> chrome extension.
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
