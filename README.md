@@ -1,5 +1,5 @@
 # QUACKEYS
-### Video Demo:  <URL HERE>
+### Video Demo:  [<URL HERE>](https://youtu.be/cRm7Iqjm92c)
 ### Description:
 A google chrome extension that turns your keyboard in into a melodious soundboard with every keystroke. It plays different seounds for keys such as space, enter, and backspace. It has various sound profiles that contain real mechanical keyboards and other fun ones.
 
